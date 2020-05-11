@@ -4,10 +4,6 @@ name: CMake Build Matrix
 
 on: [push]
 
-strategy:
-  matrix:
-    compiler: [gcc, clang]
-
 jobs:
   build:
     name: gccbuild
