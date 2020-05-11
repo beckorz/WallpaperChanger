@@ -1,0 +1,19 @@
+# @see: https://cristianadam.eu/20191222/using-github-actions-with-c-plus-plus-and-cmake/
+# @see: virtual-environments/Windows2019-Readme.md at master · actions/virtual-environments https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md
+name: CMake Build Matrix
+
+on: [push]
+
+strategy:
+  matrix:
+    compiler: [gcc, clang]
+
+jobs:
+  build:
+    name: gccbuild
+    runs-on: windows-latest
+    steps:
+    #- uses: actions/checkout@v1
+    - name: Run CMake
+      run: gcc WallpaperChanger.c -o WallpaperChanger -mwindows
+      shell: cmd
