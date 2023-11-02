@@ -1,3 +1,4 @@
+[![Build GCC](https://github.com/beckorz/WallpaperChanger/actions/workflows/build.yml/badge.svg)](https://github.com/beckorz/WallpaperChanger/actions/workflows/build.yml)
 # WallpaperChanger
 
 Simple wallpaper changer
